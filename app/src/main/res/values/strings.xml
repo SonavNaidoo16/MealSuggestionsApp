@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MealSuggestions</string>
+    <string name="reset">Reset</string>
+    <string name="morning">Morning</string>
+</resources>
