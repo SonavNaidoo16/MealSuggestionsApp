@@ -9,12 +9,14 @@
 
     <TextView
         android:id="@+id/tvMealSuggestion"
-        android:layout_width="234dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="52dp"
+        android:layout_width="304dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="32dp"
         android:text="Meal suggestion will appear here"
+        android:textColorLink="#F40202"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.977"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -84,7 +86,7 @@
         android:id="@+id/btnSuggest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="76dp"
         android:backgroundTint="#FD0505"
         android:text="Suggestions"
         app:layout_constraintEnd_toEndOf="parent"
