@@ -62,7 +62,7 @@ class MainActivity : AppCompatActivity() {
             answerText.text = "" // Clear the text view
         }
     }
-} //end code
+} //end of code
 
 
 
