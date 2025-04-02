@@ -1,6 +1,7 @@
 package vcmsa.sonav.mealsuggestions
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.RadioButton
 import android.widget.TextView
@@ -20,51 +21,61 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        //code starts here
+        //Declaration of values:
 
-        // start code here
         val radioMorning = findViewById<RadioButton>(R.id.RadioMorning)
         val radioMidMorning = findViewById<RadioButton>(R.id.radioMidMorning)
         val radioAfternoon = findViewById<RadioButton>(R.id.radioAfternoon)
         val radioMidAfternoon = findViewById<RadioButton>(R.id.radioMidAfternoon)
         val radioDinner = findViewById<RadioButton>(R.id.radioDinner)
+        val radioAfterDinner = findViewById<RadioButton>(R.id.radioAfterDinner)
         val suggestBtn = findViewById<Button>(R.id.btnSuggest)
         val resetBtn = findViewById<Button>(R.id.btnReset)
         val answerText = findViewById<TextView>(R.id.tvMealSuggestion)
 
         // Suggest button
         suggestBtn.setOnClickListener {
-            //Ai assisted by chatgpt
-            //pasted code and said "add a if statement that checks if none of the radio buttons are selected"
-            if (!radioMorning.isChecked && !radioMidMorning.isChecked && !radioAfternoon.isChecked && !radioMidAfternoon.isChecked && !radioDinner.isChecked) {
-                //end of prompt
-                answerText.text = "Please pick a option!"
+            Log.d("MainActivity", "Suggest button clicked")
+
+            if (!radioMorning.isChecked && !radioMidMorning.isChecked && !radioAfternoon.isChecked &&
+                !radioMidAfternoon.isChecked && !radioDinner.isChecked && !radioAfterDinner.isChecked
+            ) {
+                answerText.text = "Please pick an option!"
+                Log.d("MainActivity", "No option selected")
             } else {
-                answerText.text = when {
+                val selectedMeal = when {
                     radioMorning.isChecked -> listOf("Eggs and toast", "Cereal", "Pancakes", "Waffles").random()
-                    radioMidMorning.isChecked -> listOf("Chicken sandwich", "Fruit", "Yogurt", "Oatmeal").random()
-                    radioAfternoon.isChecked -> listOf("Salad", "Pasta", "Grilled Chicken", "Soup").random()
+                    radioMidMorning.isChecked -> listOf("Rice cake", "Fruit", "Yogurt", "Oatmeal").random()
+                    radioAfternoon.isChecked -> listOf("Salad", "Pasta", "Chicken sandwich", "Soup").random()
                     radioMidAfternoon.isChecked -> listOf("Burger", "Pizza", "Nachos", "Tacos").random()
                     radioDinner.isChecked -> listOf("Mutton curry", "Pasta", "Roast", "Sushi").random()
+                    radioAfterDinner.isChecked -> listOf("Ice cream", "Chocolate", "Cake", "Donut").random()
                     else -> "Please pick an option!"
                 }
+                answerText.text = selectedMeal
+
+                // Log  meal suggestion
+                Log.d("MainActivity", "Suggested meal: $selectedMeal")
             }
         }
         // Reset button
         resetBtn.setOnClickListener {
-            //Ai assisted by chatgpt
-            //pasted above code and said "fix this code"
+            Log.d("MainActivity", "Reset button clicked")
+            //Ai assisted by chatGpt
+            // Prompt pasted the above code and said "Please fix my code above and reset radio button"
+            // Reset all radio buttons
             radioMorning.isChecked = false
             radioMidMorning.isChecked = false
             radioAfternoon.isChecked = false
             radioMidAfternoon.isChecked = false
             radioDinner.isChecked = false
-            //end prompt
+            radioAfterDinner.isChecked = false
+            //end of prompt
             answerText.text = "" // Clear the text view
+            Log.d("MainActivity", "Selections cleared")
         }
     }
-} //end of code
-
-
-
+}
 
 

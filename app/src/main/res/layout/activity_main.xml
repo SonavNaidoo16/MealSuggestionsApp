@@ -20,8 +20,8 @@
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="140dp"
-        android:layout_height="232dp"
+        android:layout_width="158dp"
+        android:layout_height="289dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@id/btnSuggest"
         app:layout_constraintEnd_toStartOf="@id/imageView"
@@ -61,6 +61,12 @@
             android:minHeight="48dp"
             android:text="Dinner"
             tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/radioAfterDinner"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="After Dinner" />
     </RadioGroup>
 
     <ImageView
@@ -78,11 +84,11 @@
         android:id="@+id/btnSuggest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="96dp"
         android:backgroundTint="#FD0505"
         android:text="Suggestions"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/radioGroup" />
 
