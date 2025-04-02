@@ -14,6 +14,8 @@ Mid-Afternoon
 
 Dinner
 
+After Dinner
+
 A Suggest button provides a random meal suggestion based on the selected time.
 
 A Reset button clears the selection and suggestion.
@@ -54,13 +56,15 @@ License
 This project is licensed under the MIT License.
 
 Pictures and screenshots from the app
-![image](https://github.com/user-attachments/assets/7e93d769-28ab-48ee-82b5-d88157535940)
-![image](https://github.com/user-attachments/assets/2430b72d-d1f9-434a-b5e9-7d5ac8edf53b)
-![image](https://github.com/user-attachments/assets/1bbf088e-d012-4d07-8b30-cc5c0f782bff)
-![image](https://github.com/user-attachments/assets/8e00ef63-b0a8-4995-9353-ecd44ef59ef2)
-![image](https://github.com/user-attachments/assets/9118f884-42c3-4fe9-a166-3a56052941e7)
-![image](https://github.com/user-attachments/assets/764e0054-6fcc-4d26-a2cb-84b1fdb838e1)
-![image](https://github.com/user-attachments/assets/4fcbd055-25f8-44b4-b7e8-b995af4b54d9)
+![image](https://github.com/user-attachments/assets/cf33acbe-5879-4bc1-a073-249e9e92db42)
+![image](https://github.com/user-attachments/assets/1a90d40d-cea2-4c81-8b57-53c334ae5a62)
+![image](https://github.com/user-attachments/assets/5ce61333-c5c2-466b-8ba9-6912934826a1)
+![image](https://github.com/user-attachments/assets/9b6e50a8-c120-4207-9a80-f5270a095cd4)
+![image](https://github.com/user-attachments/assets/ed3fa9ad-c9c3-41eb-bfdf-f7953ce3be43)
+![image](https://github.com/user-attachments/assets/10b0c2d4-2da4-4cbd-bced-ea25fa171842)
+![image](https://github.com/user-attachments/assets/34dcdf50-a224-4d69-ba34-e5b436625e3c)
+
+
 
 
 
