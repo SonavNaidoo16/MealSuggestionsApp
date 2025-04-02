@@ -28,7 +28,7 @@ Clone the repository:
 bash
 Copy
 Edit
-git clone https://github.com/yourusername/mealsuggestions.git
+git clone https://github.com/sonav/mealsuggestions.git
 Open the project in Android Studio.
 
 Build and run the application on an emulator or physical device.
