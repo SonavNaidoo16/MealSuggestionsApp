@@ -60,6 +60,9 @@ Pictures and screenshots from the app
 ![image](https://github.com/user-attachments/assets/10b0c2d4-2da4-4cbd-bced-ea25fa171842)
 ![image](https://github.com/user-attachments/assets/34dcdf50-a224-4d69-ba34-e5b436625e3c)
 
+Youtube view of the APP RUNNING
+https://youtu.be/0SueE88gnwU
+
 
 
 
