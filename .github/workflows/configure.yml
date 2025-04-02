@@ -1,0 +1,19 @@
+name: CI  # Workflow name
+
+on:
+  push:
+    branches: [ "master" ]  # Runs when code is pushed to master
+  pull_request:
+    branches: [ "master" ]  # Runs when a pull request targets master
+  workflow_dispatch:  # Allows manual trigger
+
+jobs:
+  build:  # Defines a job called 'build'
+    runs-on: ubuntu-latest  # Uses the latest Ubuntu system
+
+    steps:
+      - uses: actions/checkout@v4  # Gets the repository code
+      - run: echo Hello, world!  # Prints a message
+      - run: |  # Runs multiple lines of commands
+          echo Add other actions to build,
+          echo test, and deploy your project.
