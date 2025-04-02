@@ -48,8 +48,8 @@ class MainActivity : AppCompatActivity() {
                     radioMorning.isChecked -> listOf("Eggs and toast", "Cereal", "Pancakes", "Waffles").random()
                     radioMidMorning.isChecked -> listOf("Rice cake", "Fruit", "Yogurt", "Oatmeal").random()
                     radioAfternoon.isChecked -> listOf("Salad", "Pasta", "Chicken sandwich", "Soup").random()
-                    radioMidAfternoon.isChecked -> listOf("Burger", "Pizza", "Nachos", "Tacos").random()
-                    radioDinner.isChecked -> listOf("Mutton curry", "Pasta", "Roast", "Sushi").random()
+                    radioMidAfternoon.isChecked -> listOf("Burger", "Sushi", "Nachos", "Tacos").random()
+                    radioDinner.isChecked -> listOf("Mutton curry", "Pasta", "Roast", "Pizza").random()
                     radioAfterDinner.isChecked -> listOf("Ice cream", "Chocolate", "Cake", "Donut").random()
                     else -> "Please pick an option!"
                 }
